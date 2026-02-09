@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Krishna Dhalwal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Floating Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">K</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <h1 id="skills-title" class="text-reveal">My Skills</h1>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="project-card">
+                 <img src="i1.png" alt="Alps">
+                 <div class="w3-container w3-center">
+                 </div>
+                    </div>
+                    <br>
+                    <h3>HTML/CSS</h3>
+                    <!-- <div class="skill-bar" data-percent="95"><div class="skill-fill"></div></div> -->
+                </div>
+                <div class="skill-item">
+                    <div class="project-card">
+                 <img src="i2.jpg" alt="Alps">
+                 <div class="w3-container w3-center">
+                 </div>
+                    </div>
+                    <br>
+                    <h3>JavaScript</h3>
+                    <!-- <div class="skill-bar" data-percent="60"><div class="skill-fill"></div></div> -->
+                </div>
+                <!-- <div class="skill-item">
+                    <div class="project-card">
+                 <img src="i3.png" alt="Alps">
+                 <div class="w3-container w3-center">
+                 </div>
+                    </div>
+
+                    <h3>React</h3>
+                    <div class="skill-bar" data-percent="70"><div class="skill-fill"></div></div>
+                </div> -->
+                <div class="skill-item">
+                    <div class="project-card">
+                 <img src="i4.png" alt="Alps">
+                 <div class="w3-container w3-center">
+                 </div>
+                    </div>
+                    <br>
+                    <h3>Node.js</h3>
+                    <!-- <div class="skill-bar" data-percent="40"><div class="skill-fill"></div></div> -->
+                </div>
+                <!-- <div class="skill-item">
+                    <div class="project-card">
+                 <img src="i5.png" alt="Alps">
+                 <div class="w3-container w3-center">
+                 </div>
+                    </div>
+
+                    <h3>UI/UX Design</h3>
+                    <div class="skill-bar" data-percent="88"><div class="skill-fill"></div></div>
+                </div> -->
+                <div class="skill-item">
+                    <div class="project-card">
+                 <img src="i6.jfif" alt="Alps">
+                 <div class="w3-container w3-center">
+                 </div>
+                    </div>
+                    <br>
+                    <h3>Python</h3>
+                    <!-- <div class="skill-bar" data-percent="75"><div class="skill-fill"></div></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="background-color: #2a2525; border-top-left-radius:30px ;  border-top-right-radius:30px">
+  <div class="footer-container">
+
+    <h2 class="footer-name">Krishna Dhalwal</h2>
+    <p class="footer-tagline">Web Developer • UI/UX Enthusiast • Creative Coder</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/Krishna-416" class="social-link">GitHub</a>
+      <!-- <a href="#" class="social-link">LinkedIn</a> -->
+      <a href="https://www.instagram.com/krishnadhalwal/" class="social-link">Instagram</a>
+      
+    </div>
+
+   <a href="https://www.dezyneecole.com/" style="text-decoration: none ;  color: var(--accent-color); color: gray; "> <p class="copy">© 2026 Dezyne e`cole college. All rights reserved.</p></a>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #25232396;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer-name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  /* ================================
+   SKILLS PAGE RESPONSIVE FIX
+================================ */
+
+#skills {
+    padding-top: 140px;
+}
+
+#skills-title {
+    text-align: center;
+    font-size: 2.6rem;
+    color: var(--accent-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 20px;
+}
+
+/* Skill card container */
+.skill-item {
+    text-align: center;
+}
+
+/* Skill card box */
+.skill-item .project-card {
+    padding: 15px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 15px;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.skill-item .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+/* Skill Images */
+.skill-item img {
+    width: 100%;
+    max-width: 160px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+}
+
+/* Skill title */
+.skill-item h3 {
+    margin-top: 12px;
+    font-size: 1.2rem;
+}
+
+/* Tablet Fix */
+@media (max-width: 900px) {
+    #skills-title {
+        font-size: 2.2rem;
+    }
+
+    .skill-item img {
+        max-width: 140px;
+        height: 140px;
+    }
+}
+
+/* Mobile Fix */
+@media (max-width: 600px) {
+    #skills-title {
+        font-size: 1.8rem;
+    }
+
+    .skills-grid {
+        padding: 0 10px;
+    }
+
+    .skill-item img {
+        max-width: 120px;
+        height: 120px;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 430px) {
+    .skill-item img {
+        max-width: 100px;
+        height: 100px;
+    }
+}
+
+
+  .footer-tagline {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+  .footer-socials {
+    margin-bottom: 20px;
+  }
+
+  .social-link {
+    margin: 0 15px;
+    color: var(--accent-color);
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .social-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00aaff;
+  }                 
+
+  .copy {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 20px;
+  }
+  /* Default Dark Mode */
+body.dark {
+     background: black;
+
+  color: #ffffff;
+}
+
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Footer Light Mode */
+body.light .footer {
+     background: #100f0f96;
+
+  color: #000000;
+}
+
+body.light .social-link {
+  color: #0077ff;
+}
+
+body.light .social-link:hover {
+  color: #000000;
+}
+
+</style>
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

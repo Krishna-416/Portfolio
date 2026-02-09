@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Krishna Dhalwal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Floating Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">K</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <div class="container">
+            <h1 id="projects-title" class="text-reveal">My Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="img1.webp" alt="E-Commerce Platform">
+                    <h3>E-Commerce Platform</h3>
+                    <p><strong>Tech Stack:</strong> HTML, Node.js, CSS</p>
+                    <p>A full-stack e-commerce site with payment integration and admin dashboard.</p>
+                    <br>
+                    <a href="https://github.com/Krishna-416" class="btn-glow">GITHUB</a>
+                </div>
+                <div class="project-card">
+                    <img src="img2.png" alt="Analytics Dashboard">
+                    <h3>Analytics Dashboard</h3>
+                    <p><strong>Tech Stack:</strong> Vue.js, D3.js, Firebase</p>
+                    <p>Interactive dashboard for data visualization with real-time updates.</p>
+                    <br>
+                    <br>
+                    <a href="https://github.com/Krishna-416" class="btn-glow">GITHUB</a>
+                </div>
+                <div class="project-card">
+                    <img src="img3.jfif" alt="Portfolio Website">
+                    <h3>Portfolio Website</h3>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JS</p>
+                    <p>A responsive portfolio with animations and theme toggles.</p>
+                    <br>
+                    <br>
+                    <a href="https://github.com/Krishna-416" class="btn-glow">GITHUB</a>
+                </div>
+                <div class="project-card">
+                    <img src="img4.png" alt="Chat Application">
+                    <h3>Real-Time Chat App</h3>
+                    <p><strong>Tech Stack:</strong> JavaScript,NODE</p>
+                    <p>Multi-user chat with real-time messaging and file sharing.</p>
+                    <br>
+                    <br>
+                    <a href="https://github.com/Krishna-416s"class="btn-glow">GITHUB</a>
+                </div>
+                <div class="project-card">
+                    <img src="img5.avif" alt="Blog Platform">
+                    <h3>Blog Platform</h3>
+                    <p><strong>Tech Stack:</strong> JavaScript,<html></html>/p>
+                    <p>SEO-optimized blog with CMS and user authentication.</p>
+                <br><br>
+                    <a href="https://github.com/Krishna-416ss="class="btn-glow">GITHUB</a>
+                </div>
+                <div class="project-card">
+                    <img src="img6.jfif" alt="Web Game">
+                    <h3>Interactive Web Game</h3>
+                    <p><strong>Tech Stack:</strong> HTML5, JS</p>
+                    <p>A fun puzzle game with leaderboards and animations.</p>
+                    <br>
+                    <br> 
+                    <a href="https://github.com/Krishna-416" class="btn-glow">GITHUB</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="footer" style="background-color: #2a2525; border-top-left-radius:30px ;  border-top-right-radius:30px">
+  <div class="footer-container">
+
+    <h2 class="footer-name">Krishna Dhalwal</h2>
+    <p class="footer-tagline">Web Developer • UI/UX Enthusiast • Creative Coder</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/Krishna-416" class="social-link">GitHub</a>
+      <!-- <a href="#" class="social-link">LinkedIn</a> -->
+      <a href="https://www.instagram.com/krishnadhalwal/" class="social-link">Instagram</a>
+      
+    </div>
+
+   <a href="https://www.dezyneecole.com/" style="text-decoration: none ;  color: var(--accent-color); color: gray; "> <p class="copy">© 2026 Dezyne e`cole college. All rights reserved.</p></a>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #25232396;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer-name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .footer-tagline {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+  .footer-socials {
+    margin-bottom: 20px;
+  }
+/* ===============================
+   PROJECTS PAGE RESPONSIVE FIX
+================================= */
+
+#projects-page {
+    padding-top: 140px;
+}
+
+#projects-title {
+    text-align: center;
+    font-size: 2.6rem;
+    color: var(--accent-color);
+}
+
+.projects-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Single Card Style */
+.project-card {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 22px var(--accent-color);
+}
+
+/* Responsive Image */
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+/* Text Styling */
+.project-card h3 {
+    font-size: 1.4rem;
+    color: var(--accent-color);
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-top: 5px;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* Button inside card */
+.project-card .btn-glow {
+    margin-top: 12px;
+    display: inline-block;
+}
+
+/* TABLET FIX */
+@media (max-width: 900px) {
+    #projects-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+    .projects-section {
+        padding: 10px;
+    }
+
+    #projects-title {
+        font-size: 1.8rem;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+}
+
+  .social-link {
+    margin: 0 15px;
+    color: var(--accent-color);
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .social-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00aaff;
+  }                 
+
+  .copy {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 20px;
+  }
+  /* Default Dark Mode */
+body.dark {
+     background: black;
+
+  color: #ffffff;
+}
+
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Footer Light Mode */
+body.light .footer {
+     background: #100f0f96;
+
+  color: #000000;
+}
+
+body.light .social-link {
+  color: #0077ff;
+}
+
+body.light .social-link:hover {
+  color: #000000;
+}
+
+</style>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

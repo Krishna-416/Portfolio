@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Krishna Dhalwal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/brands.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Floating Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">K</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h1 id="contact-title" class="text-reveal">CONTACT US</h1>
+            <br>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-glow">Send Message</button>
+            </form>
+            <div class="contact-info">
+               <a href="mailto:dhalwawlkrishna@gmail.com" class="btn-glow">Email Me</a>
+
+               
+                <br><br> <p>Phone: +91 9610957039  </p>
+                <div class="social-icons">
+                    <a href="https://github.com/Krishna-416">GITHUB
+                    </a>
+                    <a href="https://www.instagram.com/krishnadhalwal/">INSTAGRAM</i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notification Popup -->
+    <div id="notification" class="popup">Message sent! I will reach out soon.</div>
+
+    <footer class="footer" style="background-color: #2a2525; border-top-left-radius:30px ;  border-top-right-radius:30px">
+  <div class="footer-container">
+
+    <h2 class="footer-name">Krishna Dhalwal</h2>
+    <p class="footer-tagline">Web Developer • UI/UX Enthusiast • Creative Coder</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/Krishna-416" class="social-link">GitHub</a>
+      <!-- <a href="#" class="social-link">LinkedIn</a> -->
+      <a href="https://www.instagram.com/krishnadhalwal/" class="social-link">Instagram</a>
+      
+    </div>
+
+   <a href="https://www.dezyneecole.com/" style="text-decoration: none ;  color: var(--accent-color); color: gray; "> <p class="copy">© 2026 Dezyne e`cole college. All rights reserved.</p></a>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #25232396;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer-name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .footer-tagline {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+/* =====================================
+   CONTACT PAGE — FULL RESPONSIVE FIX
+===================================== */
+
+#contact {
+    padding-top: 150px;
+    padding-bottom: 60px;
+}
+
+#contact-title {
+    text-align: center;
+    font-size: 2.6rem;
+    color: var(--accent-color);
+}
+
+#contact .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* FORM */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: var(--text-color);
+    outline: none;
+}
+
+#contact-form textarea {
+    height: 130px;
+    resize: none;
+}
+
+#contact-form button {
+    width: 180px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Popup Notification */
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--accent-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.4s ease;
+    color: #000;
+    font-weight: 600;
+    z-index: 999;
+}
+
+.popup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================
+     RESPONSIVE BREAKPOINTS
+============================ */
+
+/* Tablets */
+@media (max-width: 900px) {
+    #contact-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #contact-title {
+        font-size: 1.8rem;
+    }
+
+    #contact .container {
+        padding: 10px;
+    }
+
+    #contact-form button {
+        width: 100%;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 420px) {
+    #contact-title {
+        font-size: 1.6rem;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+  .footer-socials {
+    margin-bottom: 20px;
+  }
+
+  .social-link {
+    margin: 0 15px;
+    color: var(--accent-color);
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .social-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00aaff;
+  }                 
+
+  .copy {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 20px;
+  }
+  /* Default Dark Mode */
+body.dark {
+     background: black;
+
+  color: #ffffff;
+}
+
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Footer Light Mode */
+body.light .footer {
+     background: #100f0f96;
+
+  color: #000000;
+}
+
+body.light .social-link {
+  color: #0077ff;
+}
+
+body.light .social-link:hover {
+  color: #000000;
+}
+
+</style>
+
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

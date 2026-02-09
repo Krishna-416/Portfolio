@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Krishna Dhalwal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Floating Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">K</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <br>
+            <h1 id="about-title" class="text-reveal" style="margin-bottom: 2rem;">About Me</h1>
+            <div class="about-image">
+                <img src="me2.jpeg" alt="Krishna Dhalwal" class="profile-img">
+
+              
+            </div>
+            <p id="about-text" class="text-reveal" style="line-height: 2rem;">  I Krishna Dhalwal ,passionate web developer dedicated to creating visually striking, high-performance digital experiences. With a strong focus on modern UI/UX, interactive elements, and smooth functionality, <br> Krishna blends creativity with clean, efficient code to bring ideas to life on the web. His work reflects a commitment to innovation, user-centric design, and continuous growth—making every project not just a website, but a crafted digital experience.
+            With expertise in HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, and modern UI frameworks, Krishna blends creativity with efficient coding practices to build fast, responsive, and visually engaging websites. His development style focuses on smooth animations, interactive components</p>
+        </div>
+         
+    </section>
+<footer class="footer" style="background-color: #2a2525; border-top-left-radius:30px ;  border-top-right-radius:30px">
+  <div class="footer-container">
+
+    <h2 class="footer-name">Krishna Dhalwal</h2>
+    <p class="footer-tagline">Web Developer • UI/UX Enthusiast • Creative Coder</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/Krishna-416" class="social-link">GitHub</a>
+      <!-- <a href="#" class="social-link">LinkedIn</a> -->
+      <a href="https://www.instagram.com/krishnadhalwal/" class="social-link">Instagram</a>
+      
+    </div>
+
+   <a href="https://www.dezyneecole.com/" style="text-decoration: none ;  color: var(--accent-color); color: gray; "> <p class="copy">© 2026 Dezyne e`cole college. All rights reserved.</p></a>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #25232396;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer-name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .about-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.profile-img {
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 1/1;         /* keeps perfect circle */
+    object-fit: cover;         /* prevents squishing */
+    border-radius: 50%;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+@media (max-width: 768px) {
+    .profile-img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img {
+        max-width: 160px;
+    }
+}
+
+
+  .footer-tagline {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+  .footer-socials {
+    margin-bottom: 20px;
+  }
+
+  .social-link {
+    margin: 0 15px;
+    color: var(--accent-color);
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .social-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00aaff;
+  }                 
+
+  .copy {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 20px;
+  }
+  /* Default Dark Mode */
+body.dark {
+     background: black;
+
+  color: #ffffff;
+}
+
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Footer Light Mode */
+body.light .footer {
+     background: #100f0f96;
+
+  color: #000000;
+}
+
+body.light .social-link {
+  color: #0077ff;
+}
+
+body.light .social-link:hover {
+  color: #000000;
+}
+
+</style>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
